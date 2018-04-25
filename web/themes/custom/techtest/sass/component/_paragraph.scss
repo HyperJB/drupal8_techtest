@@ -1,0 +1,116 @@
+/**
+ * Paragraph styling.
+ */
+
+.paragraph {
+  margin: 0;
+}
+
+
+#block-homepagecarousel {
+  .paragraph--type--slides {
+    position: relative;
+    background-color: #eeeeee;
+
+    .slide-image {
+      width: 100%;
+      img {
+        margin-left: 50%;
+        transform: translate(-50%,0);
+
+        @media screen and (max-width: 767px) {
+          height: 400px;
+        }         
+      }
+    }
+
+    .pattern-layer {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: url(../images/bars-gradient.png) left center no-repeat;
+      position: absolute;
+      top: 0;
+    }
+
+    .circle-container {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+
+    .circle-gradient {
+        width: 800px;
+        height: 800px;
+        background: -webkit-gradient(linear,left top,right top,from(rgba(239,56,47,0.75)),color-stop(30%,rgba(255,102,0,0.75)),to(rgba(255,178,127,0.75)));
+        background: linear-gradient(to right,rgba(239,56,47,0.75) 0%,rgba(255,102,0,0.75) 30%,rgba(255,178,127,0.75) 100%);
+        margin: -40px auto 0;
+        border-radius: 800px;
+
+        @media screen and (max-width: 767px) {
+          width: 600px;
+          height: 600px;
+        } 
+
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          height: 112%;
+          border-radius: 0;
+        } 
+      }
+    }
+
+
+    .flex-container {
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .slide-content {
+        max-width: 600px;
+        .slide-copy {
+          margin: 30px 0;
+        }
+        .cta-btn {
+          @include normal-button($light,$orange);
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+#block-homepageourservices {
+
+  background-color: $gray;
+  padding: 30px 0;
+
+  .paragraph--type--general-carousel {
+    margin: 0 auto;
+
+    .slide-image {
+      margin: 20px auto;
+      display: table;
+      height: 100px;
+    }
+
+    .slide-heading {
+      margin: 20px 0 0;
+    }
+
+    .slide-copy {
+      margin: 20px;
+    }
+
+    .cta-btn {
+      @include normal-button($orange,$light);
+      margin: 0 auto;
+    }
+  }
+}

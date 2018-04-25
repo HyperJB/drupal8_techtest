@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/main.js: {}
+  dependencies:
+    - core/jquery
+
+bootstrap-scripts:
+  js:
+    bootstrap/assets/javascripts/bootstrap/carousel.js: {}
+    bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+
+

@@ -1,0 +1,79 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/buttons";
+@import "component/paragraph";
+
+
+
+// General.
+body {
+  font-family: Arial;
+ 
+  ol, ul {
+  padding: 0;
+  margin:0;
+    .popover &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // CKEditor Style FULL HTML
+  span.orange-text {
+    color: $orange;
+  }
+
+  // General Carousel Arrow buttons
+  a.left.carousel-control
+  {
+    width: 70px;
+    height: 70px;
+    background: $light;
+    margin-left: 0px;
+    border-radius: 100px;
+    margin-top: 100px;
+    color: darkgray;
+
+    span {
+      margin-top: -15px;
+      margin-left: -12px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+    } 
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }     
+  }
+
+  a.right.carousel-control
+  {
+    width: 70px;
+    height: 70px;
+    background: $light;
+    margin-right: 0px;
+    border-radius: 100px;
+    margin-top: 100px;
+    color: darkgray;
+
+    span {
+      margin-top: -15px;
+      margin-left: -15px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      .icon-next {
+        margin-left: -15px !important;
+      }
+        margin-right: 0;
+    } 
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }     
+  }
+  // END OF General Carousel Arrow buttons
+
+}

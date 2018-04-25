@@ -1,0 +1,19 @@
+name: Tech Test
+description: Huw-John Nguyen Tech Test For Bang.
+type: theme
+core: 8.x
+
+
+libraries:
+  - 'techtest/global-styling'
+  - 'techtest/bootstrap-scripts'
+
+
+regions:
+  headline  : headline
+  header    : header
+  content   : content
+  sidebar   : sidebar
+  footer    : footer
+
+

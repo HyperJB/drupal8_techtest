@@ -1,0 +1,33 @@
+/**
+ * Paragraph styling.
+ */
+
+
+ // Normal curved Button
+@mixin normal-button($bgcolor,$color) {
+
+    // Background color if NOT set, then use $light
+    @if $bgcolor {
+        background-color: $bgcolor;
+    } @else {
+        background-color: $light;
+    }
+
+    display: table;
+    padding: 10px 30px;
+    border-radius: 50px;
+
+    & a {
+        // Text color if NOT set, then use $Orange
+        @if $color {
+            color: $color;
+        } @else {
+            color: $orange;
+        }
+        text-transform: uppercase;
+
+        &:hover,&:visited,&:focus {
+            text-decoration: none;
+        }
+    }
+}
