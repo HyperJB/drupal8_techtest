@@ -23,6 +23,13 @@ Requirements
 Installation
 ============
 
+ - In ROOT of directory there are 2 files
+    - DATABASE_FOR_TECH_TEST.zip
+        Database for drupal 8
+
+    - FILES.zip
+        Files folder to be unzipped & copied into "[PROJECT-FOLDER]/web/sites/default"
+
  - Wamp 3.1.0 for mySQL, Apache and php.
 
  - GRUNT to compile SASS to CSS. Go to "[PROJECT-FOLDER]/web/themes/custom/techtest" and run the command.
